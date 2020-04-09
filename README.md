@@ -39,7 +39,7 @@ Fino ad allora... Addio, e grazie per tutto il pesce.
 
 Una volta nei CD death metal si usava dedicare il lavoro ai fan con il tormentone "You know who you are!". Ora, siccome questo è un GIT, non è un CD death metal e non sono una rockstar, vorrei dedicarlo ai miei amici. 
 
-Questo videogioco è dedicato in particolare (riporto solo le iniziali per la privacy imposta da GDPR):
+Questo videogioco è dedicato in particolare (riporto solo le iniziali del cognome della madre, per la privacy imposta da GDPR):
 
 A, B, C (grandissimo!), D, E (belle cose che abbiamo passato assieme, ricordi?), F, G, H, I,
 L, M, N, O (maledetto), P, Q, R, S, T, U, V (quelle serate assieme...), Z.
