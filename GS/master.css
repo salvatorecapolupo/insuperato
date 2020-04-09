@@ -1,0 +1,201 @@
+
+body {
+	background: #29485c url(../images/bg.jpg) center top no-repeat;
+	background-size: 100% 100%;
+}
+
+.twitterButton {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	border-radius: 50%;
+	background: white;
+	height: 100px;
+	width: 100px;
+}
+
+.twitterButton iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -38px;
+}
+
+.ui {
+	width: 602px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+.ui h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: lighter;
+	padding: 20px 0 10px;
+	margin: 0;
+	color: #fff;
+	text-shadow: 0 0 20px #63DBB5, 3px 3px 0px #63DBB5;
+}
+
+.ui h1 strong {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bolder;
+}
+
+.ui p {
+	float: left;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px 5px 0 0;
+	font-size: 1em;
+	line-height: 1;
+	width: 177px;
+	color: #63DBB5;
+}
+
+.ui p#bestCombo {
+	float: right;
+	margin-right: 0;
+}
+
+.ui p span {
+	font-weight: bold;
+}
+
+.footer {
+	text-align: center;
+	font-size: 12px;
+	color: #47B372;
+	padding-bottom: 50px
+}
+
+.footer a {
+	color: #0FDD60;
+}
+
+
+.message {
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 3px 3px 1px rgba(0,0,0,0.25);
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	height: 200px;
+	width: 500px;
+	padding: 30px 0;
+	margin: 0 0 0 -250px;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 99;
+}
+
+.message h2 {
+	margin: 0;
+	padding: 0 0 20px 0;
+	text-align: center;
+	font-size: 2em;
+	color: #ccc;
+}
+
+.message ul,
+.message li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.message button {
+	display: block;
+	font-size: 1em;
+	padding: 20px;
+	border: none;
+	background: #ccc;
+	border-radius: 10px;
+	box-shadow: 3px 3px 1px rgba(0,0,0,0.15);
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+.message .twelve {
+	background-color: #E81C36;
+}
+
+.message .ten {
+	background-color: #FFC300;
+}
+
+.message .eight {
+	background-color: #25CF6B;
+}
+
+.message .six {
+	background-color: #2868C7;
+}
+
+.message .four {
+	background-color: #8F2BB3;
+}
+
+
+
+#game {
+	height: 600px;
+	width: 600px;
+	background: rgba(255, 255, 255, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	box-shadow: inset 0 0 30px rgba(47, 187, 86,0.35);
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px
+}
+
+#game .row {
+	position: absolute;
+	cursor: pointer;
+	/*border-radius: 50%;*/
+	-webkit-transform: scale(0.9);
+	background-image: url(../images/gradient.png);
+	background-size: cover;
+	overflow: hidden;
+}
+
+#game .row.glow {
+	z-index: 99;
+	box-shadow: inset 0 0 10px 10px rgba(255,255,255,1);	
+}
+
+/*RED*/
+#game .row.type-1 {
+	background-color: #E81C36;
+}
+
+/*ORANGE*/
+#game .row.type-2 {
+	background-color: #FFC300;
+}
+
+/*BLUE*/
+#game .row.type-3 {
+	background-color: #2868C7;
+}
+
+/*green*/
+#game .row.type-4 {
+	background-color: #25CF6B;
+}
+
+/*PURPLE*/
+#game .row.type-5 {
+	background-color: #8F2BB3;
+}
+
+/*BLACK*/
+#game .row.type-6 {
+	background-color: #4A3E4F;
+}
