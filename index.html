@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>INSUPERATO</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+		<!--remove tap highlight windows phone IE10/11-->
+		<meta name="msapplication-tap-highlight" content="no" />
+
+	    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+	    <!--<link rel="stylesheet" href="foundation-5.3.3/css/normalize.css">-->
+	    <link rel="stylesheet" href="foundation-5.3.3/css/foundation.css">
+	
+	    <!-- If you are using the gem version, you need this only -->
+	    <!--<link rel="stylesheet" href="css/app.css">-->
+	
+	    <!--<script src="foundation-5.3.3/js/vendor/modernizr.js"></script>-->
+
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/keys.css">
+
+		<!--jquery-->
+		<script src="js/jquery.min.js"></script>
+			
+		<!--zurb-->						
+		<script src="foundation-5.3.3/js/foundation.min.js"></script>
+								
+		<!--animatore : transit -->
+		<script src="js/jquery.transit.min.js"></script>
+				
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		
+		<!--jquery ui-->
+		<script src="js/jquery-ui.js"></script>
+
+		<!--fast click-->
+		<script src="js/fastclick.js"></script>
+
+		<!--fast click-->
+		<script src="js/game-insuperato.js"></script>
+		
+		<script>
+		$(document).ready(function() {	
+			var tmptmp = new Game();
+			var size = tmptmp.dictionarySize();
+			$("span#paroletotali").append(size);
+		}); //jQuery is ready...
+		</script>
+	</head>
+	
+	<body>
+
+	<a class="button expand" href="version2.html">Start!</a>
+
+
+<ul class="pricing-table">
+  <li class="price">Insuperato v 0.7</li>
+  <li class="description">Componi la parola con le lettere della tastiera nel tempo stabilito.</li>
+  
+  <li class="bullet-item">Dizionario di	<span id="paroletotali" class="label label-warning"></span>	parole</li>
+  <li class="bullet-item"><span class="label label-warning">7</span> livelli</li>
+</ul>
+
+	<a class="button expand" href="version2.html">Start!</a>
+	
+	
+
+</body>
+</html>

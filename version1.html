@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>INSUPERATO 0.1</title>
+        <meta name="description" content="Il gioco interattivo di ZED per Android.">
+
+		<!-- Bootstrap -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/keyboard.css">
+        <link rel="stylesheet" href="timer/mb-comingsoon-iceberg.css">
+        
+        <script src="js/vendor/modernizr-2.8.0.min.js"></script>
+
+		<!--jquery-->
+        <script src="js/jquery.min.js"></script>        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/hammer.min.js"/></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="boostrap/js/bootstrap.min.js"></script>
+    
+    	<!--fast click-->
+    	<script src="js/fastclick.js"></script>
+    
+        <!--timer-->
+        <script src="timer/js/jquery.mb-comingsoon.js"></script>
+        <!--libraries-->
+        <script src="js/cell.js"></script>
+        <script src="js/grid.js"></script>
+        <script src="js/dragAndSwap.js"></script>
+        <script src="js/insuperato.js"></script>
+        
+		<script>
+
+			
+		// Finally you have some additional Methds to control the plugin
+		//$('#timer').mbComingSoon('start') 		// start counter
+		//$('#timer').mbComingSoon('stop') 		// stop counter
+		//$('#timer').mbComingSoon(options: Object) 	// Update options
+		</script>
+   
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">Stai usando un browser vecchio o non supportato. 
+            <a href="http://browsehappy.com/">Aggiornalo</a> subito!</p>
+        <![endif]-->
+        
+	<div class="container">		
+        <div id="parola"></div>
+        <p>Componi la parola spostando le lettere della tastiera.</p>
+
+		<div id="punteggio"></div>
+								
+		<div id="keyboard" class="counter-groupk">
+    	<ul class="cf" id="qwerty">
+	    	<li><a href="#" class="dragdrop key c81" id="Q"><span>q</span></a></li>
+	    	<li><a href="#" class="dragdrop key c87" id="W"><span>w</span></a></li>
+	    	<li><a href="#" class="dragdrop key c69" id="E"><span>e</span></a></li>
+	    	<li><a href="#" class="dragdrop key c82" id="R"><span>r</span></a></li>
+	    	<li><a href="#" class="dragdrop key c84" id="T"><span>t</span></a></li>
+	    	<li><a href="#" class="dragdrop key c89" id="Y"><span>y</span></a></li>
+	    	<li><a href="#" class="dragdrop key c85" id="U"><span>u</span></a></li>
+	    	<li><a href="#" class="dragdrop key c73" id="I"><span>i</span></a></li>
+	    	<li><a href="#" class="dragdrop key c79" id="O"><span>o</span></a></li>
+	    	<li><a href="#" class="dragdrop key c80" id="P"><span>p</span></a></li>
+        </ul>
+        <ul class="cf" id="asdfg">
+	    	<li><a href="#" class="dragdrop key c65" id="A"><span>a</span></a></li>
+	    	<li><a href="#" class="dragdrop key c83" id="S"><span>s</span></a></li>
+	    	<li><a href="#" class="dragdrop key c68" id="D"><span>d</span></a></li>
+	    	<li><a href="#" class="dragdrop key c70" id="F"><span>f</span></a></li>
+	    	<li><a href="#" class="dragdrop key c71" id="G"><span>g</span></a></li>
+	    	<li><a href="#" class="dragdrop key c72" id="H"><span>h</span></a></li>
+	    	<li><a href="#" class="dragdrop key c74" id="J"><span>j</span></a></li>
+	    	<li><a href="#" class="dragdrop key c75" id="K"><span>k</span></a></li>
+	    	<li><a href="#" class="dragdrop key c76" id="L"><span>l</span></a></li>
+	    	<li><span class="blanka" id="v1"></span></li>
+        </ul>
+        <ul class="cf" id="zxcvb">
+	    	<li><span class="blanka"></span></li>
+	    	<li><a href="#" class="dragdrop key c90" id="Z"><span>z</span></a></li>
+	    	<li><a href="#" class="dragdrop key c88" id="X"><span>x</span></a></li>
+	    	<li><a href="#" class="dragdrop key c67" id="C"><span>c</span></a></li>
+	    	<li><a href="#" class="dragdrop key c86" id="V"><span>v</span></a></li>
+	    	<li><a href="#" class="dragdrop key c66" id="B"><span>b</span></a></li>
+	    	<li><a href="#" class="dragdrop key c78" id="N"><span>n</span></a></li>
+	    	<li><a href="#" class="dragdrop key c77" id="M"><span>m</span></a></li>
+	    	<li><span class="blanka" id="v2"></span></li>
+	    	<li><span class="blanka" id="v3"></span></li>
+        </ul>
+   </div>
+		<div id="timer"></div>
+			
+		<div id="console" class="well"></div>
+		
+		<a href="index.html" class="btn btn-primary btn-lg active">Ricomincia</a>
+		
+	</div>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <title>pan test</title>
+        <meta name="description" content="Il gioco interattivo di ZED per Android.">
+
+		<!-- Bootstrap -->
+    	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/keyboard.css">
+        <link rel="stylesheet" href="timer/mb-comingsoon-iceberg.css">
+        
+        <script src="js/vendor/modernizr-2.8.0.min.js"></script>
+
+		<!--jquery-->
+        <script src="js/jquery.min.js"></script>        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/hammer.min.js"/></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="boostrap/js/bootstrap.min.js"></script>
+    
+    	<!--fast click-->
+    	<script src="js/fastclick.js"></script>
+    
+        <!--libraries-->
+        <script src="js/cell.js"></script>
+        <script src="js/grid.js"></script>
+        <script src="js/dragAndSwap.js"></script>
+        <script src="js/insuperato.js"></script>
+         
+    </head>
+    <body>
+        
+	<div class="container">		
+		
+		<div class="well" id="square1"></div>
+		
+		
+		<div id="log"></div>
+		
+		<div id="hit"style="background: #42d692; width: 150px; height: 150px;"></div>
+		
+		<div id="tapdiv"style="background: #14FB14; width: 100px; height: 100px;"></div>
+		
+		
+<script>
+				
+window.addEventListener('load', function() { 
+    var element = document.getElementById('tapdiv');
+    var console = $("#log");
+    //var hammertime = Hammer(element).on("tap", function(event) {
+    //    alert('pan!');
+    //})
+    
+    			var hammertime = new Hammer( element );
+				hammertime.on('pan', function(ev) {
+    				console.append(ev);
+				});
+
+
+}, false);				
+				
+				
+var reqAnimationFrame = (function () {
+		alert("req ok");
+        return window[Hammer.prefixed(window, 'requestAnimationFrame')] || function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+        };
+    })();
+
+    var log = document.querySelector("#log");
+    var el = document.querySelector("#hit");
+
+    var START_X = Math.round((window.innerWidth - el.offsetWidth) / 2);
+    var START_Y = Math.round((window.innerHeight - el.offsetHeight) / 2);
+
+    var ticking = false;
+    var transform;
+
+    var mc = new Hammer.Manager(el);
+
+    mc.add(new Hammer.Pan({ threshold: 0, pointers: 0 }));
+
+    mc.add(new Hammer.Swipe()).recognizeWith(mc.get('pan'));
+    mc.add(new Hammer.Rotate({ threshold: 0 })).recognizeWith(mc.get('pan'));
+    mc.add(new Hammer.Pinch({ threshold: 0 })).recognizeWith([mc.get('pan'), mc.get('rotate')]);
+
+    mc.add(new Hammer.Tap({ event: 'doubletap', taps: 2 }));
+    mc.add(new Hammer.Tap()).recognizeWith('doubletap');
+
+    mc.on("pan", onPan);
+    mc.on("swipe", onSwipe);
+    mc.on("rotate", onRotate);
+    mc.on("pinch", onPinch);
+    mc.on("tap", onTap);
+    mc.on("doubletap", onDoubleTap);
+
+    mc.on("panend rotateend pinchend pancancel rotatecancel pinchcancel", resetElement);
+
+
+    function resetElement() {
+        transform = {
+            translate: { x: START_X, y: START_Y },
+            scale: 1,
+            rotate: 0
+        };
+        el.className = 'animate';
+
+        requestElementUpdate();
+
+        if (log.textContent.length > 2000) {
+            log.textContent = log.textContent.substring(0, 2000) + "...";
+        }
+    }
+
+    function updateElementTransform() {
+        var value = [
+                    'translate3d(' + transform.translate.x + 'px, ' + transform.translate.y + 'px, 0)',
+                    'scale(' + transform.scale + ', ' + transform.scale + ')',
+                    'rotate(' + transform.rotate + 'deg)'];
+
+        value = value.join(" ");
+        el.textContent = value;
+        el.style.webkitTransform = value;
+        el.style.mozTransform = value;
+        el.style.transform = value;
+        ticking = false;
+    }
+
+    function requestElementUpdate() {
+        if(!ticking) {
+            reqAnimationFrame(updateElementTransform);
+            ticking = true;
+        }
+    }
+
+    function logEvent(str) {
+        //log.insertBefore(document.createTextNode(str +"\n"), log.firstChild);
+    }
+
+    function onPan(ev) {
+        el.className = '';
+        transform.translate = {
+            x: START_X + ev.deltaX,
+            y: START_Y + ev.deltaY
+        };
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+
+    function onSwipe(ev) {
+        el.style.background = 'white';
+        setTimeout(function () {
+            el.style.background = '#42d692';
+            requestElementUpdate();
+        }, 300);
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+
+    function onPinch(ev) {
+        el.className = '';
+        transform.scale = ev.scale;
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+    function onRotate(ev) {
+        el.className = '';
+        transform.rotate = ev.rotation;
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+
+    function onTap(ev) {
+        el.style.borderRadius = '100%';
+        setTimeout(function () {
+            el.style.borderRadius = '0';
+            requestElementUpdate();
+        }, 100);
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+
+    function onDoubleTap(ev) {
+        transform.scale = transform.scale === 1 ? 1.5 : 1;
+        requestElementUpdate();
+        logEvent(ev.type);
+    }
+
+    resetElement();				
+		</script>
+	</div>
+    </body>
+</html>
