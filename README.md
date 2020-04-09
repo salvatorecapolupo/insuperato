@@ -1,11 +1,9 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# [INSUPERATO]
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+Un vecchio videogame che avevo iniziato a sviluppare nel 2014, poi abbandonato.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
+Ho pubblicato la versione esattamente come l'avevo lasciata all'epoca, con una struttura a livelli.
+Il gioco non è mai stato completato e non finisce... ma dovrebbe funzionare più o meno al 70%
 
 * Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 * Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
@@ -14,51 +12,40 @@ framework, so you're free to architect your code in the way that you want.
 
 ## Quick start
 
-Choose one of the following options:
+Devi comporre le parole indicate, che saranno sempre più lunghe:
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the [tagged
-   release](https://github.com/h5bp/html5-boilerplate/releases) you'd like to
-   use.
+1. trascinando i vari tasti (drag'n drop)
+2. finendo entro il tempo prestabilito
 
 
 ## Features
 
 * HTML5 ready. Use the new elements with confidence.
 * Cross-browser compatible (Chrome, Firefox, IE8+, Opera, Safari).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  older browsers.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+* Designed in ZURB
+* Ottimizzato in Tarapia Tapioco
 
 [HTML5 Boilerplate v4 provides legacy browser
 support](https://github.com/h5bp/html5-boilerplate/tree/v4) (IE 6+, Firefox
-3.6+, Safari 4+), but is no longer actively developed.
+3.6+, Safari 4+), lo vede come stuzzica?
 
 ## Documentation
 
-Take a look at the [documentation table of contents](doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation you
-want to write about your project.
+La documentazione è disponibile qui.
+Forse un giorno questo gioco uscirà ufficialmente in una nuova versione.
+Fino ad allora... Addio, e grazie per tutto il pesce.
 
 
-## Contributing
+## Dediche
 
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+Questo videogioco è dedicato con assoluta indifferenza:
+
+- ai tempi che furono
+- agli amici di un tempo
+- a chi credeva in me
+- a chi non ci ha mai creduto
+- agli stronzi e alle stronze che sono spariti (ehi, io sono qui e voi no)
+- a chi si è fatto da parte, tutto sommato saggiamente
+- a chi c'era
+- a chi non c'è mai stato
+- ai pochi che, bontà loro, sono rimasti nella mia vita.
