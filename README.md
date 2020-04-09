@@ -5,9 +5,8 @@ Un vecchio videogame che avevo iniziato a sviluppare nel 2014, poi abbandonato.
 Ho pubblicato la versione esattamente come l'avevo lasciata all'epoca, con una struttura a livelli.
 Il gioco non è mai stato completato e non finisce... ma dovrebbe funzionare più o meno al 70%
 
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+* Il mio blog: [https://capolooper.it](https://capolooper.it)
+* Twitter: [@salcapolupo](http://twitter.com/salcapolupo)
 
 
 ## Quick start
