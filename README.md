@@ -8,7 +8,7 @@ Ho pubblicato la versione esattamente come l'avevo lasciata all'epoca, con una s
 Il gioco non è mai stato completato e non finisce... ma dovrebbe funzionare più o meno al 70%
 
 * Il mio blog: [https://capolooper.it](https://capolooper.it)
-* Twitter: [@salcapolupo](http://twitter.com/salcapolupo)
+* Twitter: [@sarbathory](http://twitter.com/sarbathory)
 
 
 ## Quick start
