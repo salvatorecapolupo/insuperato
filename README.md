@@ -2,6 +2,8 @@
 
 Un vecchio videogame che avevo iniziato a sviluppare nel 2014, poi abbandonato.
 
+Per provarlo clicca qui: https://salvatorecapolupo.github.io/insuperato/ 
+
 Ho pubblicato la versione esattamente come l'avevo lasciata all'epoca, con una struttura a livelli.
 Il gioco non è mai stato completato e non finisce... ma dovrebbe funzionare più o meno al 70%
 
@@ -47,13 +49,20 @@ L, M, N, O (maledetto), P, Q, R, S, T, U, V (quelle serate assieme...), Z.
 E poi:
 
 - ai tempi che furono
+- ai tempi dell'Unical, del MyPlace e del B-Side
+- al dottorato di ricerca
+- a quelli che volevano mandarmi in post-doc non pagato in Tunisia 
+- a chi diceva che aprirmi la PIVA era una follia
 - agli amici di un tempo
 - ai nuovi amici
 - a chi credeva in me
-- a chi non ci ha mai creduto
-- agli stronzi e alle stronze che sono spariti (ehi, io sono qui e voi no)
-- a chi si è fatto da parte, tutto sommato saggiamente
+- a quelli che "la vera musica è ..."
+- a chi non l'ha mai fatto
+- a chi mi ha fermato sul più bello, per colpa di un problema che mi sono autoriferito per anni ma che probabilmente era soltanto suo
+- a quelli che sono spariti (ehi, io sono qui e voi no)
+- a quelli che mi hanno invitato a cambiare aria (grazie)
+- a chi si è fatto da parte (tutto sommato è stato saggio)
 - a chi c'era
 - a chi non si aspettava tutto questo
 - a chi non c'è mai stato
-- ai pochi che, bontà loro, sono rimasti nella mia vita
+- ai quelli che sono rimasti
