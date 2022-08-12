@@ -66,3 +66,5 @@ E poi:
 - a chi non si aspettava tutto questo
 - a chi non c'è mai stato
 - ai quelli che sono rimasti
+
+2014 - Non lasciarmi ricordi / Che fermino il mio tempo / Auf wiedersehen (Erode, Tempo che non ritorna - 1997, Gridalo Forte Records)
