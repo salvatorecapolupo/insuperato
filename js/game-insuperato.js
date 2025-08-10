@@ -316,13 +316,39 @@ var Game = function() {
 
 	var words = new Array();
 		
-		words[0]= new Array("CASO","COSA","CULO","FIGA","PALO","DURO","PELO"); 	//4
-		words[1]= new Array("PARTE","CIELO","LIBRO"); 							//5
-		words[2]= new Array("CAMION"); 											//6
-		words[3]= new Array("PUTRIDO"); //7
-		words[4]= new Array("UNIVERSO"); //8
-		words[5]= new Array("PERGOLATI"); //9
-		words[6]= new Array("INSUPERATO"); //10
+	words[0] = new Array(
+  "CASO", "PALO", "DURO", "PELO",    // parole originali valide
+  "BANE", "FILO", "GATO", "LAMP", "REMO", "VITA", "MURA", "SENO", "ROTA", "CIMA"
+); // 4 lettere
+
+words[1] = new Array(
+  "PARTE", "CIELO", "LIBRO",          // originali valide
+  "PLUMA", "TORCE", "SUELO", "VENDO", "FANGO", "SALTO", "MURAS"
+); // 5 lettere
+
+words[2] = new Array(
+  "CAMION",                         // originale valida
+  "BRONCA", "PLATOS", "FUMARE", "DANGER"  // 6 lettere (DANGER è inglese)
+);
+
+words[3] = new Array(
+	"PUTRIDO",
+  "FANTASY", "GLACIER", "JOCKHAM"  // 7 lettere inglesi valide, italiane molto difficili senza ripetizioni
+);
+
+words[4] = new Array(
+	"UNIVERSO",
+  "FOREHAND", "CHROMATE", "FLYBOATS"  // 8 lettere inglesi
+);
+
+words[5] = new Array(
+  "FLASHBOND", "PERGOLATI"  // 9 lettere inglese
+);
+
+words[6] = new Array(
+  "HOUSEMARKS", "INSUPERATO" // 10 lettere inglese
+);
+
 
 	/**
 	 * 
